@@ -1,0 +1,15 @@
+---
+layout: gallery
+---
+<h1 align="center"><a href="/{{ site.gallery.dir }}">&larr;</a> {{ page.title }}</h1>
+<div id="gallery">
+{% for image in page.images %}
+    <div class="gallery-image-wrapper">
+        <a name="{{ image }}"></a>
+        <a href="/{{ site.gallery.dir }}/{{ page.urx }}/{{ image }}">
+            <img class="gallery-image" src="/{{ site.gallery.dir }}/{{ page.urx }}/thumbs/{{ image }}" />
+        </a>
+    </div>
+{% endfor %}
+</div>
+<h1 align="center"><a href="/{{ site.gallery.dir }}">&larr;</a></h1>
